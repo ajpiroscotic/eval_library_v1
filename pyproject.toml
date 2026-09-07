@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pm-eval-kit"
+version = "0.1.0"
+description = "Evaluation library for AI Product Manager artifacts"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Your Name" }]
+license = { text = "MIT" }
+keywords = ["llm", "evals", "product-management", "ai-pm", "rubrics"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+pmeval = "pmeval.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pmeval*"]
+
+[tool.setuptools.package-data]
+pmeval = ["rubrics/*.json"]
