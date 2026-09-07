@@ -1,0 +1,97 @@
+{
+  "required_sections": [
+    "Problem",
+    "Target User",
+    "MVP Scope",
+    "Non-Goals",
+    "Success Metrics",
+    "Risks",
+    "Launch Criteria"
+  ],
+  "dimensions": [
+    {
+      "name": "Problem clarity",
+      "weight": 1.2,
+      "signals": [
+        "problem",
+        "pain point",
+        "why now",
+        "user need",
+        "current workflow",
+        "job to be done"
+      ],
+      "recommendation": "Clarify the user problem, current workflow, and why this matters now."
+    },
+    {
+      "name": "User specificity",
+      "weight": 1.0,
+      "signals": [
+        "target user",
+        "persona",
+        "segment",
+        "workflow",
+        "use case",
+        "primary user"
+      ],
+      "recommendation": "Define a specific user segment, workflow, and use case."
+    },
+    {
+      "name": "Scope control",
+      "weight": 1.1,
+      "signals": [
+        "mvp",
+        "non-goals",
+        "out of scope",
+        "must-have",
+        "nice-to-have",
+        "v1",
+        "roadmap"
+      ],
+      "recommendation": "Separate MVP, non-goals, and later roadmap items."
+    },
+    {
+      "name": "Metrics quality",
+      "weight": 1.3,
+      "signals": [
+        "success metrics",
+        "north star",
+        "activation",
+        "retention",
+        "task success",
+        "latency",
+        "cost",
+        "quality threshold"
+      ],
+      "recommendation": "Add measurable product and AI quality metrics with thresholds."
+    },
+    {
+      "name": "AI risk awareness",
+      "weight": 1.4,
+      "signals": [
+        "hallucination",
+        "guardrails",
+        "failure mode",
+        "escalation",
+        "human review",
+        "privacy",
+        "safety",
+        "abuse"
+      ],
+      "recommendation": "Add AI-specific failure modes, guardrails, and escalation paths."
+    },
+    {
+      "name": "Launch readiness",
+      "weight": 1.0,
+      "signals": [
+        "launch criteria",
+        "beta",
+        "rollout",
+        "rollback",
+        "monitoring",
+        "support",
+        "release gate"
+      ],
+      "recommendation": "Define beta/GA launch gates, monitoring, and rollback criteria."
+    }
+  ]
+}

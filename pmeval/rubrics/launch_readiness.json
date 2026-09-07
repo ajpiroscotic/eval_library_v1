@@ -1,0 +1,96 @@
+{
+  "required_sections": [
+    "Launch Criteria",
+    "Quality Gates",
+    "Monitoring",
+    "Rollback",
+    "Support Plan",
+    "Risks"
+  ],
+  "dimensions": [
+    {
+      "name": "Quality gates",
+      "weight": 1.4,
+      "signals": [
+        "quality gate",
+        "launch criteria",
+        "threshold",
+        "pass/fail",
+        "eval score",
+        "blocking",
+        "severity"
+      ],
+      "recommendation": "Add launch gates with explicit thresholds and blocking severity."
+    },
+    {
+      "name": "Observability",
+      "weight": 1.2,
+      "signals": [
+        "monitoring",
+        "dashboard",
+        "trace",
+        "logging",
+        "alert",
+        "latency",
+        "cost",
+        "feedback"
+      ],
+      "recommendation": "Define monitoring dashboard, traces, alerts, and feedback capture."
+    },
+    {
+      "name": "Operational readiness",
+      "weight": 1.0,
+      "signals": [
+        "support plan",
+        "runbook",
+        "on-call",
+        "handoff",
+        "documentation",
+        "training"
+      ],
+      "recommendation": "Add support runbook, handoff flow, documentation, and training plan."
+    },
+    {
+      "name": "Rollback and rollout",
+      "weight": 1.2,
+      "signals": [
+        "rollback",
+        "rollout",
+        "beta",
+        "canary",
+        "phased",
+        "kill switch",
+        "fallback"
+      ],
+      "recommendation": "Define phased rollout, rollback, fallback, and kill switch plan."
+    },
+    {
+      "name": "Risk and safety",
+      "weight": 1.2,
+      "signals": [
+        "risk",
+        "guardrail",
+        "privacy",
+        "security",
+        "abuse",
+        "compliance",
+        "incident"
+      ],
+      "recommendation": "Add risk review, privacy/security checks, guardrails, and incident process."
+    },
+    {
+      "name": "Business readiness",
+      "weight": 0.8,
+      "signals": [
+        "success metrics",
+        "adoption",
+        "activation",
+        "retention",
+        "cost",
+        "business goal",
+        "stakeholder"
+      ],
+      "recommendation": "Tie launch to business/product metrics and stakeholder alignment."
+    }
+  ]
+}

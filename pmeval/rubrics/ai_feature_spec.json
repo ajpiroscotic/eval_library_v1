@@ -1,0 +1,102 @@
+{
+  "required_sections": [
+    "AI Capability",
+    "Data Requirements",
+    "Model Behavior",
+    "Guardrails",
+    "Evaluation Plan",
+    "System Constraints"
+  ],
+  "dimensions": [
+    {
+      "name": "AI fit",
+      "weight": 1.2,
+      "signals": [
+        "ai capability",
+        "model",
+        "llm",
+        "classification",
+        "generation",
+        "retrieval",
+        "agent",
+        "automation"
+      ],
+      "recommendation": "Explain exactly what AI capability is required and why non-AI automation is insufficient."
+    },
+    {
+      "name": "Data readiness",
+      "weight": 1.2,
+      "signals": [
+        "data requirements",
+        "source",
+        "schema",
+        "quality",
+        "freshness",
+        "pii",
+        "permissions",
+        "ground truth"
+      ],
+      "recommendation": "Document data sources, quality, permissions, and ground truth requirements."
+    },
+    {
+      "name": "Model behavior",
+      "weight": 1.1,
+      "signals": [
+        "input",
+        "output",
+        "schema",
+        "confidence",
+        "uncertainty",
+        "abstain",
+        "refuse",
+        "cite"
+      ],
+      "recommendation": "Define expected model behavior, output schema, uncertainty handling, and refusal/abstention rules."
+    },
+    {
+      "name": "Guardrails",
+      "weight": 1.3,
+      "signals": [
+        "guardrail",
+        "validation",
+        "policy",
+        "safety",
+        "privacy",
+        "tool permission",
+        "human approval",
+        "rate limit"
+      ],
+      "recommendation": "Specify input, output, retrieval, and tool-use guardrails."
+    },
+    {
+      "name": "Evaluation",
+      "weight": 1.4,
+      "signals": [
+        "eval",
+        "golden dataset",
+        "test set",
+        "threshold",
+        "task success",
+        "faithfulness",
+        "regression",
+        "human review"
+      ],
+      "recommendation": "Add an eval plan with datasets, metrics, thresholds, and regression tests."
+    },
+    {
+      "name": "System constraints",
+      "weight": 1.0,
+      "signals": [
+        "latency",
+        "cost",
+        "p95",
+        "availability",
+        "fallback",
+        "observability",
+        "trace",
+        "logging"
+      ],
+      "recommendation": "Add latency, cost, availability, fallback, and observability constraints."
+    }
+  ]
+}

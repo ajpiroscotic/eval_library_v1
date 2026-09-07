@@ -1,0 +1,96 @@
+{
+  "required_sections": [
+    "Policy",
+    "Input Guardrails",
+    "Output Guardrails",
+    "Tool Guardrails",
+    "Escalation",
+    "Abuse Cases"
+  ],
+  "dimensions": [
+    {
+      "name": "Policy clarity",
+      "weight": 1.1,
+      "signals": [
+        "policy",
+        "allowed",
+        "disallowed",
+        "refuse",
+        "abstain",
+        "scope",
+        "boundary"
+      ],
+      "recommendation": "Define allowed/disallowed behavior and refusal/abstention boundaries."
+    },
+    {
+      "name": "Input controls",
+      "weight": 1.1,
+      "signals": [
+        "input guardrail",
+        "prompt injection",
+        "jailbreak",
+        "pii",
+        "malicious",
+        "validation",
+        "sanitization"
+      ],
+      "recommendation": "Add input validation for prompt injection, PII, malicious content, and malformed requests."
+    },
+    {
+      "name": "Output controls",
+      "weight": 1.1,
+      "signals": [
+        "output guardrail",
+        "redaction",
+        "citation",
+        "schema",
+        "toxicity",
+        "unsupported claim",
+        "hallucination"
+      ],
+      "recommendation": "Define output validation, citations, redaction, and unsupported-claim handling."
+    },
+    {
+      "name": "Tool controls",
+      "weight": 1.3,
+      "signals": [
+        "tool",
+        "permission",
+        "authorization",
+        "human approval",
+        "side effect",
+        "dry run",
+        "confirmation"
+      ],
+      "recommendation": "Specify scoped tool permissions, approval requirements, and side-effect controls."
+    },
+    {
+      "name": "Retrieval controls",
+      "weight": 1.0,
+      "signals": [
+        "retrieval",
+        "source",
+        "document",
+        "context",
+        "grounding",
+        "citation",
+        "poisoning"
+      ],
+      "recommendation": "Add retrieval/source trust, grounding, and malicious-document controls."
+    },
+    {
+      "name": "Escalation and monitoring",
+      "weight": 1.0,
+      "signals": [
+        "escalation",
+        "handoff",
+        "monitoring",
+        "audit log",
+        "trace",
+        "incident",
+        "rollback"
+      ],
+      "recommendation": "Define human escalation, audit logs, incident handling, and rollback."
+    }
+  ]
+}

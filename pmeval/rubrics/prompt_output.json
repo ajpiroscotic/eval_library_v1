@@ -1,0 +1,78 @@
+{
+  "required_sections": [
+    "Output",
+    "Assumptions",
+    "Recommendations"
+  ],
+  "dimensions": [
+    {
+      "name": "Structure",
+      "weight": 1.0,
+      "signals": [
+        "section",
+        "summary",
+        "recommendation",
+        "next step",
+        "table",
+        "bullet"
+      ],
+      "recommendation": "Improve output structure with clear sections and next steps."
+    },
+    {
+      "name": "Specificity",
+      "weight": 1.2,
+      "signals": [
+        "specific",
+        "example",
+        "metric",
+        "owner",
+        "timeline",
+        "constraint",
+        "tradeoff"
+      ],
+      "recommendation": "Add concrete examples, metrics, owners, timelines, or constraints."
+    },
+    {
+      "name": "Instruction following",
+      "weight": 1.1,
+      "signals": [
+        "format",
+        "requested",
+        "constraint",
+        "must",
+        "only",
+        "avoid",
+        "include"
+      ],
+      "recommendation": "Check whether output follows requested format and constraints."
+    },
+    {
+      "name": "Risk awareness",
+      "weight": 1.2,
+      "signals": [
+        "risk",
+        "failure",
+        "guardrail",
+        "assumption",
+        "uncertainty",
+        "limitation",
+        "privacy"
+      ],
+      "recommendation": "Add assumptions, risks, limitations, and guardrails."
+    },
+    {
+      "name": "Actionability",
+      "weight": 1.2,
+      "signals": [
+        "action",
+        "next step",
+        "decision",
+        "priority",
+        "recommendation",
+        "launch",
+        "implement"
+      ],
+      "recommendation": "Make output more actionable with prioritized decisions or next steps."
+    }
+  ]
+}

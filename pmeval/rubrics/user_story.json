@@ -1,0 +1,77 @@
+{
+  "required_sections": [
+    "User Story",
+    "Acceptance Criteria",
+    "Edge Cases"
+  ],
+  "dimensions": [
+    {
+      "name": "User and need",
+      "weight": 1.2,
+      "signals": [
+        "as a",
+        "i want",
+        "so that",
+        "user",
+        "persona",
+        "need"
+      ],
+      "recommendation": "Write the story from a clear user/persona and need."
+    },
+    {
+      "name": "Acceptance criteria",
+      "weight": 1.4,
+      "signals": [
+        "given",
+        "when",
+        "then",
+        "acceptance criteria",
+        "pass",
+        "fail",
+        "expected"
+      ],
+      "recommendation": "Add testable acceptance criteria using Given/When/Then or equivalent."
+    },
+    {
+      "name": "AI behavior",
+      "weight": 1.1,
+      "signals": [
+        "confidence",
+        "fallback",
+        "refuse",
+        "abstain",
+        "citation",
+        "explain",
+        "uncertainty"
+      ],
+      "recommendation": "Specify AI behavior for uncertainty, refusal, explanation, and fallback."
+    },
+    {
+      "name": "Edge cases",
+      "weight": 1.1,
+      "signals": [
+        "edge case",
+        "error",
+        "invalid",
+        "missing",
+        "ambiguous",
+        "duplicate",
+        "timeout"
+      ],
+      "recommendation": "Add edge cases, errors, ambiguous inputs, and timeout behavior."
+    },
+    {
+      "name": "Measurability",
+      "weight": 1.0,
+      "signals": [
+        "metric",
+        "threshold",
+        "latency",
+        "accuracy",
+        "task success",
+        "quality"
+      ],
+      "recommendation": "Add measurable acceptance thresholds."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "required_sections": [
+    "Objective",
+    "Dataset",
+    "Metrics",
+    "Thresholds",
+    "Failure Modes",
+    "Human Review",
+    "Regression Tests"
+  ],
+  "dimensions": [
+    {
+      "name": "Objective clarity",
+      "weight": 1.0,
+      "signals": [
+        "objective",
+        "what we evaluate",
+        "scope",
+        "quality goal",
+        "decision"
+      ],
+      "recommendation": "State what decision the eval informs and what system behavior is being tested."
+    },
+    {
+      "name": "Dataset design",
+      "weight": 1.3,
+      "signals": [
+        "dataset",
+        "golden set",
+        "edge cases",
+        "adversarial",
+        "representative",
+        "labels",
+        "ground truth"
+      ],
+      "recommendation": "Describe golden examples, edge cases, labels, and representative coverage."
+    },
+    {
+      "name": "Metric coverage",
+      "weight": 1.4,
+      "signals": [
+        "metric",
+        "task success",
+        "accuracy",
+        "faithfulness",
+        "relevance",
+        "recall",
+        "precision",
+        "latency",
+        "cost"
+      ],
+      "recommendation": "Define product, quality, safety, latency, and cost metrics."
+    },
+    {
+      "name": "Thresholds",
+      "weight": 1.3,
+      "signals": [
+        "threshold",
+        "pass",
+        "fail",
+        "launch gate",
+        "minimum",
+        "blocking",
+        "severity"
+      ],
+      "recommendation": "Add explicit pass/fail thresholds and launch blocking criteria."
+    },
+    {
+      "name": "Failure analysis",
+      "weight": 1.1,
+      "signals": [
+        "failure mode",
+        "taxonomy",
+        "root cause",
+        "false positive",
+        "false negative",
+        "regression"
+      ],
+      "recommendation": "Add failure-mode taxonomy and regression analysis plan."
+    },
+    {
+      "name": "Human review",
+      "weight": 1.0,
+      "signals": [
+        "human review",
+        "annotator",
+        "reviewer",
+        "calibration",
+        "inter-rater",
+        "appeal"
+      ],
+      "recommendation": "Define human review, calibration, and escalation process."
+    },
+    {
+      "name": "Monitoring loop",
+      "weight": 1.0,
+      "signals": [
+        "monitoring",
+        "production",
+        "drift",
+        "dashboard",
+        "trace",
+        "feedback",
+        "alert"
+      ],
+      "recommendation": "Add production monitoring and feedback loop after launch."
+    }
+  ]
+}
